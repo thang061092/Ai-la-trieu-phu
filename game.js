@@ -59,8 +59,9 @@ class Game {
         alert("Bạn ra về với số tiền thưởng là :" + this.quizs[this.point].score + "000 vnđ");
     }
     exitss() {
-        this.showQuizs();
         this.count += 1;
+        this.showQuizs();
+        this.getCorrects();
     }
     gameOver() {
         console.log("gameOver")
