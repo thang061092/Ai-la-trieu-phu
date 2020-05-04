@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ai Là Triệu Phú</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+</head>
+<body style="">
+<div id="start-game">
+    <h1><img src="ai-1479912951_7818.png" width="250px" height="250px"></h1>
+    <h2>Nào chúng ta bắt đầu đi tìm ai là triệu phú!!!</h2>
+    <br>
+    <button class="starts" id="start" onclick="start()">Start</button>
+
+
+</div>
+<div class="main-body" id="main" style="display: none">
+    <h1><img src="ai-1479912951_7818.png" width="200px" height="200px"></h1>
+    <h3 class="point" id="point"></h3>
+    <br>
+    <h2 class="question-number" id="question-number"> Question 1 : </h2>
+    <h4 class="question" id="question"></h4>
+    <br>
+    <ul class="answers">
+        A:<li id="0" onclick="game.selectAnswers(this.id)"></li>
+        B:<li id="1" onclick="game.selectAnswers(this.id)"></li>
+        C:<li id="2" onclick="game.selectAnswers(this.id)"></li>
+        D:<li id="3" onclick="game.selectAnswers(this.id)"></li>
+    </ul>
+    <br>
+    <h4>Time:</h4>
+    <div id="time"></div>
+    <br><br><br>
+    <div class="help">
+        <a href="https://www.google.com.vn/?hl=vi" target="_blank" class="myButton">Google</a>
+        <button class="help" id="exit-sound" onclick="game.exitss()">Bỏ Qua</button>
+        <button class="help" id="stop-sound" onclick="stop()">Stop Play</button>
+    </div>
+    <br><br>
+    <audio id="sound" src="Sau_quang_cao.ogg"></audio>
+    <audio id="true" src="C1-4---Dung.ogg"></audio>
+    <audio id="false" src="C8,_13_sai.ogg"></audio>
+    <audio id="lose" src="C8,_13_sai.ogg"></audio>
+    <audio id="sound-5050" src="5050.ogg"></audio>
+
+</div>
+<script src="quiz.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
+
